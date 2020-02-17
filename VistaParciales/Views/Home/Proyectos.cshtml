@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewBag.Title = "Proyecto";
+}
+
+<h2 style="color:gray">Vista Parcial Simple y Vista Parcial con Contenido Lógico</h2>
+<br />
+
+<!--Agrego mi Vista Parcial simple-->
+<div class="jumbotron">
+
+    @Html.Partial("_MiPrimeraVistaParcial")
+
+</div>
+<br />
+<!-- Agrego mi Vista Parcial contenido lógico-->
+<div>
+
+    @{
+        Html.RenderAction("_Cursos", "Cursos");
+    }
+</div>
+
+
+

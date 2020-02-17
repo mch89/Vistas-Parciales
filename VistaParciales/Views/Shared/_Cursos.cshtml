@@ -1,0 +1,50 @@
+﻿@using VistaParciales.Models
+@model List<Curso>
+
+    <table class="table table-bordered table-hover">
+        <tr>
+            <th>Cursos</th>
+            <th>Descripcion</th>
+            <th>Precio</th>
+            <th>Horas</th>
+
+        </tr>
+
+        @foreach (var curso in Model)
+        {
+            <tr>
+                <td> @curso.Nombre</td>
+                <td> @curso.Descripcion</td>
+                <td> @curso.Precio</td>
+                <td> @curso.Num_Horas</td>
+            </tr>
+        }
+
+    </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
